@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Guidefor extends Component {
-
-    constructor(props) {
-        super(props);
-    }
 
     render() {
       return (
@@ -13,7 +10,7 @@ class Guidefor extends Component {
             <p>부자 하실 거임 말 거임?</p>
           </div>
           <div>
-            <button type="button" className="button">Direct</button>
+            <Link to={'/fee'} className="btn2"><button class="ui teal button">신청하셈 그게 답임</button></Link>
           </div>
         </div>
       );
